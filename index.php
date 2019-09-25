@@ -6,7 +6,7 @@ switch ($request) {
     case '/' :
         require __FILE__ . './index.html';
         break;
-	case '/' :
+	case '' :
         require __FILE__ . './index.html';
         break;
     case '/about' :
