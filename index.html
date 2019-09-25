@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Philosopher&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
 		<title>J.W.</title>
 	</head>
 	<body>
+
 		<header>
-			<h1>Justin Waltz</h1>
+			<i class="material-icons md-36">menu</i>
+			<h1 id="header-name">JUSTIN WALTZ</h1>
 			<!-- <nav>
 				<div class="nav-item">
 					<h2>About Me</h2>
@@ -18,71 +21,80 @@
 				</div>
 			</nav> -->
 		</header>
+		<div class="top-img">
+		</div>
 		<main>
-			<div class="top-img">
-
-			</div>
 			<!-- <button type="button" name="button" id="testbtn">click</button> -->
 			<div class="display" id="hello-display">
 				<h1 class="display-header">Hello Everyone</h1>
-				<p>I thrive on continuous growth, both personally and professionally, and I am excited about companies that support a culture of learning, of authentic growth in knowledge and know-how. The realm of thought and of ideas, thinking them through, and understanding them, is where I am at home. A well thought-out and refined idea make for a smoother and more deliberative implementation, and can carry you through the hard work of seeing projects through to the end, and that is where I see my greatest contribution to any company and any project I work on.</p>
+				<p>I thrive on continuous growth, both personally and professionally, and I am excited about companies that support a culture of learning, of authentic growth in knowledge and know-how. The realm of thought and of ideas, thinking them through, and understanding them, is where I am at home.</p>
+
 			</div>
-			<div class="display" id="projects-display">
-				<a href="https://jwaltz001.github.io" target="_blank">
-					<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project1">
-						<div class="project-info">
-							<h3>Decide & Play</h3>
-							<strong>Languages/Frameworks</strong>
-							<p>HTML, CSS, JavaScript(JQuery Library), Web API)</p>
-							<hr/>
-							<p>Application for and comparing a wide range of board games based on clearly laid out common parameters.</p>
+			<div class="display" id="recent-projects-display">
+				<div id="recent-project-thumbnails">
+					<a href="https://jwaltz001.github.io" target="_blank">
+						<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project1">
+							<div class="project-info">
+								<h2>Decide & Play</h2>
+								<strong>Languages/Frameworks</strong>
+								<p>HTML, CSS, JavaScript(JQuery Library), Web API)</p>
+								<hr/>
+								<p>Application for and comparing a wide range of board games based on clearly laid out common parameters.</p>
+							</div>
 						</div>
-					</div>
-				</a>
-				<a href="https://agile-reef-61883.herokuapp.com/" target="_blank">
-					<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project2">
-						<div class="project-info">
-							<h3>RESTful Drinks</h3>
-							<strong>Languages/Frameworks</strong>
-							<p>EJS, CSS (w/Materialize framework), NodeJS, ExpressJS, NoSQL(MongoDB)</p>
-							<hr/>
-							<p></p>
+					</a>
+					<a href="https://agile-reef-61883.herokuapp.com/" target="_blank">
+						<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project2">
+							<div class="project-info">
+								<h2>RESTful Drinks</h2>
+								<strong>Languages/Frameworks</strong>
+								<p>EJS, CSS (w/Materialize framework), NodeJS, ExpressJS, NoSQL(MongoDB)</p>
+								<hr/>
+								<p>Create an account to take detailed notes on the wines you've tried</p>
+							</div>
 						</div>
-					</div>
-				</a>
-				<a href="https://trustytownies.herokuapp.com/" target="_blank">
-					<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project3">
-						<div class="project-info">
-							<h3>Trusty Townies</h3>
-							<strong>Languages/Frameworks</strong>
-							<p>AngularJS, CSS, ExpressJS, MongoDB, Google Cloud Platform</p>
-							<hr/>
-							<p>An application to review and recommend local businesses to other users.</p>
+					</a>
+					<!-- <a href="https://trustytownies.herokuapp.com/" target="_blank">
+						<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project3">
+							<div class="project-info">
+								<h2>Trusty Townies</h2>
+								<strong>Languages/Frameworks</strong>
+								<p>AngularJS, CSS, ExpressJS, MongoDB, Google Cloud Platform</p>
+								<hr/>
+								<p>An application to review and recommend local businesses to other users.</p>
+							</div>
 						</div>
-					</div>
-				</a>
-				<a href="https://sleepy-atoll-68112.herokuapp.com/" target="_blank">
-					<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project4">
-						<div class="project-info">
-							<h3>listful.</h3>
-							<strong>Languages/Frameworks</strong>
-							<p>Ruby, Rails, SQL(Postgres), React, CSS</p>
-							<hr/>
-							<p>A master list making app for a wide variety of your favorite things all in one place.</p>
+					</a>
+					<a href="https://sleepy-atoll-68112.herokuapp.com/" target="_blank">
+						<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project4">
+							<div class="project-info">
+								<h2>listful.</h2>
+								<strong>Languages/Frameworks</strong>
+								<p>Ruby, Rails, SQL(Postgres), React, CSS</p>
+								<hr/>
+								<p>A master list making app for a wide variety of your favorite things all in one place.</p>
+							</div>
 						</div>
-					</div>
-				</a>
-				<a href="https://sharpen.azurewebsites.net/" target="_blank">
-					<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project5">
-						<div class="project-info">
-							<h3>Sharpen</h3>
-							<strong>Languages/Frameworks</strong>
-							<p>C#, .Net, Azure, CSS(Bootstrap framework)</p>
-							<hr/>
-							<p>A retro 8-bit video game themed trivia game with a highscore table.</p>
+					</a> -->
+					<a href="https://sharpen.azurewebsites.net/" target="_blank">
+						<div onmouseover="showInfo(this)" onmouseout="hideInfo(this)" class="project-div" id="project5">
+							<div class="project-info">
+								<h2>Sharpen</h2>
+								<strong>Languages/Frameworks</strong>
+								<p>C#, .Net, Azure, CSS(Bootstrap framework)</p>
+								<hr/>
+								<p>A retro 8-bit video game themed trivia game with a highscore table.</p>
+							</div>
 						</div>
+					</a>
+				</div>
+				<div id="recent-projects-info">
+					<h1 class="display-header">Recent Projects</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<div class="button-div">
+						<button type="button" name="button">See More</button>
 					</div>
-				</a>
+				</div>
 			</div>
 			<div class="display" id="about-display">
 				<h1 class="display-header">About Me</h1>
@@ -91,10 +103,15 @@
 		</main>
 		<footer>
 			<ul>
-				<li><a href="https://github.com/jwaltz001"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="" height='50px'></a></li>
-				<li><a href="https://www.linkedin.com/in/justin-waltz/"><img src="https://library.kissclipart.com/20180918/pvw/kissclipart-linkedin-icoon-png-clipart-linkedin-computer-icons-5982e4eda47e2385.png" alt="" height='50px'></a></li>
-				<li><a href="justinwaltz@me.com">justinwaltz@me.com</a></li>
-				<li><a href="(832) 564-7337">(832) 564-7337</a></li>
+				<li><a href="Justin_Waltz_Resume.pdf" target="_blank" title="Resume"><i class="material-icons md-48">description</i></a></li>
+				<li><a href="https://github.com/jwaltz001"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" target="_blank" alt="" title="GitHub Profile" height='50px'></a></li>
+				<li><a href="https://www.linkedin.com/in/justin-waltz/"><img src="https://library.kissclipart.com/20180918/pvw/kissclipart-linkedin-icoon-png-clipart-linkedin-computer-icons-5982e4eda47e2385.png" target="_blank" alt="" title="LinkedIn Profile" height='50px'></a></li>
+				<li><a href="mailto:justinwaltz@me.com" target="_blank" title="Email"><i class="material-icons md-48">
+email
+</i></a></li>
+				<li><a href="tel:(832) 564-7337" title="Phone Number"><i class="material-icons md-48">
+phone
+</i></a></li>
 			</ul>
 		</footer>
 	<script src="app.js" charset="utf-8"></script>

@@ -5,11 +5,11 @@
 function showInfo(mousedOverDiv) {
 	console.log("changing");
 	let divToShow = mousedOverDiv.children[0];
-	divToShow.style.display="flex";
+	divToShow.classList.add("project-info-visible");
 }
 
 function hideInfo(mousedOutDiv) {
 	console.log("changing back");
 	let divTohide = mousedOutDiv.children[0];
-	divTohide.style.display="none";
+	divTohide.classList.remove("project-info-visible");
 }
