@@ -4,22 +4,22 @@ $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
     case '/' :
-        require __FILE__ . './index.html';
+        require 'index.html';
         break;
 	case '' :
-        require __FILE__ . './index.html';
+        require 'index.html';
         break;
     case '/about' :
-        require __FILE__ . './about.html';
+        require './about.html';
         break;
     case '/projects' :
-        require __FILE__ . './projects.html';
+        require './projects.html';
         break;
 	case '/contact' :
-        require __FILE__ . './contact.html';
+        require './contact.html';
         break;
     default:
-        require __FILE__ . './404.html';
+        require './404.html';
         break;
 }
 
