@@ -10,7 +10,7 @@
 	<body>
 
 		<header>
-			<i class="material-icons md-36">menu</i>
+			<i class="material-icons md-36" id="menu-open-btn">menu</i>
 			<h1 id="header-name">JUSTIN WALTZ</h1>
 			<!-- <nav>
 				<div class="nav-item">
@@ -104,8 +104,8 @@
 		<footer>
 			<ul>
 				<li><a href="Justin_Waltz_Resume.pdf" target="_blank" title="Resume"><i class="material-icons md-48">description</i></a></li>
-				<li><a href="https://github.com/jwaltz001"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" target="_blank" alt="" title="GitHub Profile" height='50px'></a></li>
-				<li><a href="https://www.linkedin.com/in/justin-waltz/"><img src="https://library.kissclipart.com/20180918/pvw/kissclipart-linkedin-icoon-png-clipart-linkedin-computer-icons-5982e4eda47e2385.png" target="_blank" alt="" title="LinkedIn Profile" height='50px'></a></li>
+				<li><a href="https://github.com/jwaltz001"  target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="" title="GitHub Profile" height='50px'></a></li>
+				<li><a href="https://www.linkedin.com/in/justin-waltz/" target="_blank"><img src="https://library.kissclipart.com/20180918/pvw/kissclipart-linkedin-icoon-png-clipart-linkedin-computer-icons-5982e4eda47e2385.png" alt="" title="LinkedIn Profile" height='50px'></a></li>
 				<li><a href="mailto:justinwaltz@me.com" target="_blank" title="Email"><i class="material-icons md-48">
 email
 </i></a></li>
@@ -114,6 +114,16 @@ phone
 </i></a></li>
 			</ul>
 		</footer>
+		<div class="modal" id="menu-modal">
+			<i class="material-icons md-48" id="menu-close-btn">
+close
+</i>
+			<ul id="menu-items">
+				<a href="#"><li class="menu-item">About</li></a>
+				<a href="#"><li class="menu-item">Project</li></a>
+				<a href="#"><li class="menu-item">Contacts</li></a>
+			</ul>
+		</div>
 	<script src="app.js" charset="utf-8"></script>
 	</body>
 </html>
