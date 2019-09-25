@@ -10,16 +10,16 @@ switch ($request) {
         require 'index.html';
         break;
     case '/about' :
-        require './about.html';
+        require 'about.html';
         break;
     case '/projects' :
-        require './projects.html';
+        require 'projects.html';
         break;
 	case '/contact' :
-        require './contact.html';
+        require 'contact.html';
         break;
     default:
-        require './404.html';
+        require '404.html';
         break;
 }
 
