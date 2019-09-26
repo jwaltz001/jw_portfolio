@@ -1,0 +1,19 @@
+.about-body{
+	display: flex;
+}
+
+#family-img {
+	height: 800px;
+	filter: grayscale(100%);
+	float: left;
+}
+#about-body {
+	padding: 2rem;
+}
+#about-body > img {
+	margin-right: 2rem;
+}
+#about-body > p {
+	display: inline;
+	padding: 2rem;
+}
