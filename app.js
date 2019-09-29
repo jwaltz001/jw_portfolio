@@ -10,13 +10,13 @@ document.getElementById("menu-close-btn").addEventListener("click", () => {
 })
 
 function showInfo(mousedOverDiv) {
-	console.log("changing");
+	//console.log("changing");
 	let divToShow = mousedOverDiv.children[0];
-	divToShow.classList.add("project-info-visible");
+	divToShow.classList.add("visit-site-div-visible");
 }
 
 function hideInfo(mousedOutDiv) {
-	console.log("changing back");
+	//console.log("changing back");
 	let divTohide = mousedOutDiv.children[0];
-	divTohide.classList.remove("project-info-visible");
+	divTohide.classList.remove("visit-site-div-visible");
 }
