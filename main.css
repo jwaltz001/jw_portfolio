@@ -10,14 +10,11 @@ body{
 h1 {
 	text-align: center;
 	margin-top: 0;
-	font-size: 25pt;
+	font-size: 1.5rem;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	margin: 0;
 	width: 100%;
-}
-i {
-	margin-left: 1em;
 }
 h2 {
 	margin-top: 0;
@@ -82,20 +79,17 @@ a > img {
 }
 
 .top-img {
-	background-image:
-		linear-gradient(black, black),
-		url("shapelined-_JBKdviweXI-unsplash.jpg");
-	background-blend-mode: saturation;
+	background-image: url("shapelined-_JBKdviweXI-unsplash mobile-copy.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	filter: brightness(30%);
 }
 .display {
-	width: 95%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -107,12 +101,11 @@ a > img {
 	width: 90%;
 }
 .project-div {
-	width: 90%;
-	height: auto;
+	height: 350px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
-	margin: 2em 2em 0 0;
+	margin: 2em 0;
 }
 .visit-site-div {
 	opacity: 0;
@@ -145,7 +138,7 @@ a > img {
 	width: 90%;
 }
 .display-header {
-	font-size: 60pt;
+	font-size: 35pt;
 	font-family: 'Lato', sans-serif;
 	width: 90%;
 	text-align: left;
@@ -201,8 +194,7 @@ a > img {
 #recent-project-thumbnails{
 	justify-content: space-around;
 	flex-flow: column nowrap;
-	margin-right: 2rem;
-	width: 80%;
+	width: 95%;
 	padding-top: 1rem;
 }
 #recent-projects-info{
@@ -239,15 +231,38 @@ a > img {
 }
 
 @media only screen and (min-width: 600px) {
+	h1 {
+		font-size: 25px;
+	}
+	i {
+		margin-left: 1em;
+	}
+	.top-img {
+		background-image:
+			linear-gradient(black, black),
+			url("shapelined-_JBKdviweXI-unsplash.jpg");
+		background-blend-mode: saturation;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 500px;
+		filter: brightness(30%);
+	}
 	.display {
     	width: 80%;
     }
 	.display > p, .display-header, #recent-project-thumbnails, #recent-projects-info {
 		width: 500px;
 	}
+	.display-header {
+		font-size: 60pt;
+	}
 	.project-div {
 		width: 450px;
 		height: 350px;
+		margin: 2em 2em 0 0;
 	}
 	.modal {
 		background: #2B2B2BCC;
@@ -258,12 +273,17 @@ a > img {
 	}
 	#recent-projects-info{
 		width: 500px;
-		position: sticky;
-		position: -webkit-sticky; /* Safari */
+	}
+	#recent-project-thumbnails{
+		margin-right: 2rem;
+		width: 80%;
+	}
 }
 
 @media only screen and (min-width: 1290px) {
 	#recent-projects-info {
+		position: sticky;
+		position: -webkit-sticky; /* Safari */
 		order: 1;
 	}
 }
