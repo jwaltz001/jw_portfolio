@@ -1,19 +1,23 @@
 .about-body{
 	display: flex;
 }
-
 #family-img {
-	height: 800px;
+	width: 100%;
 	filter: grayscale(100%);
-	float: left;
-}
-#about-body {
-	padding: 2rem;
-}
-#about-body > img {
-	margin-right: 2rem;
-}
-#about-body > p {
-	display: inline;
-	padding: 2rem;
+
+@media only screen and (min-width: 600px) {
+	#family-img {
+		height: 800px;
+		float: left;
+	}
+	#about-body {
+		padding: 2rem;
+	}
+	#about-body > img {
+		margin-right: 2rem;
+	}
+	#about-body > p {
+		display: inline;
+		padding: 2rem;
+	}
 }
