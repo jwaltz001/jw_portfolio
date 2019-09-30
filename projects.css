@@ -10,6 +10,9 @@ article {
 	background-position: top;
 	margin-right: 2rem;
 }
+#projects-page-info > p {
+	margin: 1rem;
+}
 #projects-page-project-list{
 	display: flex;
 	flex-direction: column;

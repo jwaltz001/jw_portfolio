@@ -4,10 +4,14 @@
 #family-img {
 	width: 100%;
 	filter: grayscale(100%);
+}
+#about-body > p {
+	padding: 0 1rem;
+}
 
 @media only screen and (min-width: 600px) {
 	#family-img {
-		height: 800px;
+		max-width: 600px;
 		float: left;
 	}
 	#about-body {
